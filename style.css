@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+    font:large monospace;
+    color: white;
+    background: url("taaz.jpg") fixed;
+    background-size: 100% 100%;
+    padding:0;
+    margin:0;
+    /*linear-gradient(rgba(255,255,255,.66), rgba(255,255,255,.66)),*/
+}
+
+h1{
+    margin-top: 2em;
+    font: 2em;
+}
+
+header{
+    margin-bottom: 3em;
+}
+
+input{
+    width: 90%;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    padding:0.5em;
+    border-radius: 2em;
+}
+  
+#input{
+    width:60%;
+    margin:1.5em 20% 1em 20%;
+    background-color:rgba(32, 110, 235, 0.33);
+    border-radius: 1.5em;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+button{
+    margin: 0.5em 45% 1em 45%;
+    padding:1em;
+    border-radius: 2em;
+    font-family: monospace;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+button:active{
+    transform: scale(0.95);
+    transition: transform 0.25s;
+}
+
+#result{
+    width:60%;
+    margin: 3em 20% 1em 20%;
+    background-color:rgba(32, 110, 235, 0.33);
+    border-radius: 1.5em;
+    padding: 0.25em;
+}
+
+.heart {
+    font-size:  100px;
+    text-align: center;
+    color: red;
+    animation: beat 1s infinite;
+    position: fixed;
+    top:500px;
+    left:20px;
+}
+
+@keyframes beat {
+	from {
+		transform: scale(1);
+		transform-origin: center center;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		transform: scale(1.1);
+		animation-timing-function: ease-in;
+	}
+	15% {
+		transform: scale(1);
+		animation-timing-function: ease-out;
+	}
+	25% {
+		transform: scale(1.05);
+		animation-timing-function: ease-in;
+	}
+  35% {
+    transform: scale(1);
+		animation-timing-function: ease-out;
+  }
+}
