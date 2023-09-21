@@ -63,37 +63,3 @@ button:active{
     border-radius: 1.5em;
     padding: 0.25em;
 }
-
-.heart {
-    font-size:  100px;
-    text-align: center;
-    color: red;
-    animation: beat 1s infinite;
-    position: fixed;
-    top:500px;
-    left:20px;
-}
-
-@keyframes beat {
-	from {
-		transform: scale(1);
-		transform-origin: center center;
-		animation-timing-function: ease-out;
-	}
-	10% {
-		transform: scale(1.1);
-		animation-timing-function: ease-in;
-	}
-	15% {
-		transform: scale(1);
-		animation-timing-function: ease-out;
-	}
-	25% {
-		transform: scale(1.05);
-		animation-timing-function: ease-in;
-	}
-  35% {
-    transform: scale(1);
-		animation-timing-function: ease-out;
-  }
-}
