@@ -1,11 +1,12 @@
 function base_to_base(base1,base2,num){
-    
-    if(base1==10){
-        return num.toString(base2);
-    }
 
     if(base1==base2){
         return num;
+    }
+    
+    if(base1==10){
+        num10 = parseInt(num);
+        return num10.toString(base2);
     }
 
     num10 = 0;
